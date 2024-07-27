@@ -1,0 +1,115 @@
+body{
+    height:100dvh;
+    flex-direction: column;
+    display: flex;
+    color: #F8EDED;
+    align-items: center;
+    justify-content: center;
+    background-color: #173B45;
+}
+.act{background-color: #631b1b}
+.start{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin: 5vmin;
+    font-size: 4vmin;
+    width: 20vmin;
+    font-weight: 700;
+    height:8vmin;
+    border-radius: 20px;
+    background-color: #B43F3F;}
+.op{
+    height: 21vmin;
+    width: 30vmin;
+    margin:3vmin;
+    background-color: #B43F3F;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vmin;
+    font-weight: 900;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 3px 3px 10px black;
+
+}
+.start:hover
+{
+    background-color: #8c2a2a;
+}
+.op:hover{
+    background-color: #8c2a2a;
+}
+.menu{
+    margin:5vmin;
+    display: flex;
+    align-items: center;
+    width: 80vmin;
+    background-color: #F8EDED;
+    color: white;
+    font-size: 4vmin;
+    border-radius: 20px;
+    border: 0.3vmin solid #060d10;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px black;
+}
+.playground{
+    background-color: brown;
+    display: none;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height:50vmin;
+    width: 50vmin;
+    gap:2vmin;
+    border-radius: 10%;
+    border:2vmin solid brown;
+    border-radius: 3.33%;
+
+}
+
+.cell{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    background-color:aliceblue;
+    border-radius: 10%;
+    font-weight: 400;
+    font-size: 10vmin;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .playground{
+        height:80vmin;
+        width: 80vmin;
+        padding: 2vmin;
+    }
+    .cell
+    {
+        font-size: 14vmin;
+    }
+    .menu
+    {
+        flex-direction: column;
+        padding:4vmin;
+    }
+    .op
+    {
+        width: 70vmin;
+        font-size: 6vmin;
+    }
+    .start
+    {
+        width: 30vmin;
+        height: 15vmin;
+        border-radius: 40px;
+        font-size:large;
+    }
+}
